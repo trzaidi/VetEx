@@ -42,7 +42,7 @@ export default function Home() {
         {!loading && listings.length === 0 && <p>No listings yet. Be the first to post.</p>}
         <div className="listings-grid">
           {listings.map(listing => (
-            <div key={listing.id} className="listing-card">
+            <div key={listing.id} className="listing-card" onClick={() => navigate(`/listing/${listing.id}`)}>
               <div className="listing-images">
                 {listing.image_url && (
                   <img src={listing.image_url} alt={listing.title} className="listing-image" />
