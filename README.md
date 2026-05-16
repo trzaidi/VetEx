@@ -1,16 +1,25 @@
-# React + Vite
+# VetEx
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clothing exchange platform for veterans. Post items you no longer need, find what others have listed, and connect directly to arrange the exchange. Completely free to use, built for the community by the community.
 
-Currently, two official plugins are available:
+Veterans transition out with uniforms, gear, and clothing that no longer fits their life. Others need business attire for interviews, civilian clothes for school, or just want to save money. VetEx allows veterans to connect directly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- Frontend: React + Vite
+- Backend: Supabase
+- Maps: Leaflet.js
+- Hosting: Vercel
+- Platforms: Web and Mobile
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## MVP Features
 
-## Expanding the ESLint configuration
+- [ ] User authentication (email and password)
+- [ ] Post a listing with photo, size, condition, and location
+- [ ] Browse and search listings
+- [ ] Map view to find listings nearby
+- [ ] Direct messaging between users
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## License
+
+MIT
