@@ -4,7 +4,7 @@ import { supabase } from '../lib/supabase'
 import { useAuth } from '../context/AuthContext'
 
 export default function Home() {
-  const { user } = useAuth()
+  const { user, profile } = useAuth()
   const navigate = useNavigate()
   const [listings, setListings] = useState([])
   const [loading, setLoading] = useState(true)
@@ -32,7 +32,7 @@ export default function Home() {
         <span className="nav-logo">VetEx</span>
         <div className="nav-actions">
           <button className="btn-post" onClick={() => navigate('/new')}>Post listing</button>
-          <span className="nav-email">{user?.email}</span>
+          <span className="nav-email">{profile?.username}</span>
           <button className="btn-logout" onClick={handleLogout}>Log out</button>
         </div>
       </nav>

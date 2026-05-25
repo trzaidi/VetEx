@@ -4,9 +4,12 @@ import Login from './pages/Login'
 import Home from './pages/Home'
 import NewListing from './pages/NewListing'
 import Listing from './pages/Listing'
+import SetUsername from './pages/SetUsername'
 
 function App() {
-  const { user } = useAuth()
+  const { user, profile } = useAuth()
+
+  if (user && !profile) return <SetUsername />
 
   return (
     <BrowserRouter>
