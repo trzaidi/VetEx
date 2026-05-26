@@ -610,3 +610,70 @@ body {
 .btn-save:hover, .btn-cancel:hover {
   opacity: 0.75;
 }
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .nav-email {
+    display: none;
+  }
+
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .listings-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .listing-image {
+    height: 120px;
+  }
+
+  .new-listing {
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  .form-card {
+    padding: 1.5rem 1.25rem;
+    border-radius: 12px;
+  }
+
+  .listing-page {
+    padding: 1rem;
+  }
+
+  .listing-detail-images img {
+    height: 220px;
+  }
+
+  .listing-detail-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .login-card {
+    padding: 1.75rem 1.25rem;
+    border-radius: 12px;
+  }
+
+  .login h1 {
+    font-size: 2.2rem;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+  }
+
+  .filters select {
+    flex: 1 1 45%;
+  }
+}
