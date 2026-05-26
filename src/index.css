@@ -677,3 +677,45 @@ body {
     flex: 1 1 45%;
   }
 }
+
+.location-search {
+  position: relative;
+  margin-bottom: 0.85rem;
+}
+
+.location-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #1a1a2e;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  list-style: none;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.location-suggestions li {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+  border-bottom: 1px solid var(--border);
+}
+
+.location-suggestions li:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.map-picker {
+  margin-bottom: 0.85rem;
+}
+
+.map-hint {
+  color: rgba(255,255,255,0.35);
+  font-size: 0.75rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
